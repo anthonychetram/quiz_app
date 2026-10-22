@@ -24,7 +24,6 @@ class _QuestionsScreenState extends State<QuestionsScreen>{
       }
   @override
   Widget build(BuildContext context) {
-      var currentQuestionIndex = 0;
 
     final currentQuestion = questions[currentQuestionIndex];
     return Center( 
