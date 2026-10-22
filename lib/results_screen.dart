@@ -26,18 +26,20 @@ class ResultsScreen extends StatelessWidget{
       width: double.infinity,
       child: Container(
         margin: const EdgeInsets.all(40),
-        child:  Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children:  [
-            const Text('You answered X out of Y questions Correctly'),
-            const SizedBox(height:30,),
-            QuestionsSummary(summaryData: getSummaryData()),
-            const SizedBox(height:30,),
-            TextButton(
-              onPressed: (){},
-              child: const Text('Restart Quiz'),
-            )
-          ],
+        child:  SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children:  [
+              const Text('You answered X out of Y questions Correctly'),
+              const SizedBox(height:30,),
+              QuestionsSummary(summaryData: getSummaryData()),
+              const SizedBox(height:30,),
+              TextButton(
+                onPressed: (){},
+                child: const Text('Restart Quiz'),
+              )
+            ],
+          ),
         ),
       ),
     );
