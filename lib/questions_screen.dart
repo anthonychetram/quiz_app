@@ -25,7 +25,7 @@ class _QuestionsScreenState extends State<QuestionsScreen>{
   @override
   Widget build(BuildContext context) {
 
-    final currentQuestion = questions[currentQuestionIndex];
+    final currentQuestion = questions[currentQuestionIndex]; //future error here if the user answers all questions and the index goes out of range. We will fix this later.
     return Center( 
       child: Container(
         margin: const EdgeInsets.all(50),
